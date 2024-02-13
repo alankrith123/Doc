@@ -16,8 +16,6 @@ import { NavLink, Link, useLocation } from "react-router-dom";
 import React, { useContext } from "react";
 import { UserContext } from "../../../Context/UserContext";
 import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
-import VaccinesIcon from "@mui/icons-material/Vaccines";
-import ReceiptIcon from "@mui/icons-material/Receipt";
 import GroupIcon from "@mui/icons-material/Group";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import styles from "./SideBar.module.css";
@@ -180,80 +178,7 @@ export default function Sidebar({ open, handleDrawerClose, handleDrawerOpen }) {
           </ListItemButton>
         </ListItem>
 
-        <ListItem
-          key={"Prescriptions"}
-          disablePadding
-          sx={{ display: "block" }}
-        >
-          <ListItemButton
-            component={NavLink}
-            to="/prescriptions"
-            style={{ textDecoration: "none", color: "white" }}
-            selected={selectedItem == "prescriptions" ? true : false}
-            sx={{
-              minHeight: 48,
-              justifyContent: open ? "initial" : "center",
-              px: 2.5,
-              "&.Mui-selected": {
-                backgroundColor: "#1b4f32",
-              },
-              "&.Mui-selected:hover": {
-                backgroundColor: "#1b4f32",
-              },
-            }}
-          >
-            <ListItemIcon
-              sx={{
-                minWidth: 0,
-                mr: open ? 3 : "auto",
-                justifyContent: "center",
-              }}
-            >
-              <ReceiptIcon style={{ color: "#fff" }} />
-            </ListItemIcon>
-            <ListItemText
-              primary={"Prescriptions"}
-              sx={{ opacity: open ? 1 : 0 }}
-            />
-          </ListItemButton>
-        </ListItem>
-
-        {(currentUser.userType == "Admin" ||
-          currentUser.userType == "Doctor") && (
-          <ListItem key={"Medicines"} disablePadding sx={{ display: "block" }}>
-            <ListItemButton
-              component={NavLink}
-              to="/medicines"
-              style={{ textDecoration: "none", color: "white" }}
-              selected={selectedItem == "medicines" ? true : false}
-              sx={{
-                minHeight: 48,
-                justifyContent: open ? "initial" : "center",
-                px: 2.5,
-                "&.Mui-selected": {
-                  backgroundColor: "#1b4f32",
-                },
-                "&.Mui-selected:hover": {
-                  backgroundColor: "#1b4f32",
-                },
-              }}
-            >
-              <ListItemIcon
-                sx={{
-                  minWidth: 0,
-                  mr: open ? 3 : "auto",
-                  justifyContent: "center",
-                }}
-              >
-                <VaccinesIcon style={{ color: "#fff" }} />
-              </ListItemIcon>
-              <ListItemText
-                primary={"Medicines"}
-                sx={{ opacity: open ? 1 : 0 }}
-              />
-            </ListItemButton>
-          </ListItem>
-        )}
+      
         {currentUser.userType == "Admin" && <Divider />}
         {currentUser.userType == "Admin" && (
           <ListItem key={"Users"} disablePadding sx={{ display: "block" }}>

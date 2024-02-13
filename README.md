@@ -59,13 +59,7 @@ Make sure you have the following installed:
 
 ## Getting Started
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/TahirRajpoot/HealthCarePlus_SE_Project.git
-```
-
-### 2. Install Dependencies
+### 1. Install Dependencies
 
 #### Backend
 
@@ -81,7 +75,7 @@ cd frontend
 npm install
 ```
 
-### 3. Configure Environment Variables
+### 2. Configure Environment Variables
 
 #### Backend
 
@@ -96,7 +90,7 @@ CLIENT_ID =
 ```
 Re[;ace thes with your gmailid, clientid, gmail password, secret key, client secret
 
-### 4. Run the Application
+### 3. Run the Application
 
 #### Backend
 
@@ -116,7 +110,7 @@ npm start
 
 The frontend development server will run on http://localhost:3000 by default.
 
-### 5. Open in Browser
+### 4. Open in Browser
 
 Open your web browser and navigate to http://localhost:3000 to access the MERN stack application.
 
@@ -125,20 +119,6 @@ Open your web browser and navigate to http://localhost:3000 to access the MERN s
 - The backend API routes are available at http://localhost:8080/api/.
 - Make sure MongoDB is running before starting the backend server.
 - You can customize the application by modifying the code in the `frontend` and `backend` directories.
-
-
-## Contribution Guidelines
-
-Contributions to enhance the functionality and performance of the Hospital Management System are welcomed. To contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes, ensuring alignment with the project structure.
-4. Thoroughly test to avoid introducing bugs.
-5. Submit a pull request with a clear description of your changes.
-
-Let's collaborate to make healthcare management more efficient and accessible!
-
 
 
 

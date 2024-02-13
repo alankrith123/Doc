@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "msedge",
+            "name": "enter",
+            "request": "launch",
+            "url": "enter"
+        }
+    ]
+}

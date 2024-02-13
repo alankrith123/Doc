@@ -3,7 +3,7 @@ import React from "react";
 function NotFound() {
   return (
     <div>
-      <h2 style={{ margin: "70px" }}>This Path is not available</h2>
+      <h2 style={{ margin: "70px" }}>It's under Devlopment</h2>
     </div>
   );
 }

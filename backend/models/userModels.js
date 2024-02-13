@@ -9,6 +9,8 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: [true, "Please provide email"],
       unique: true,
+      trim: true,
+      lowercase: true,
     },
     username: {
       type: String,
@@ -18,6 +20,7 @@ const UserSchema = new mongoose.Schema(
     password: {
       type: String,
       required: [true, "Please provide password"],
+      minlength: 5,
     },
     activated: {
       type: Boolean,

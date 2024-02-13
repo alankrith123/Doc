@@ -160,7 +160,7 @@ function Register() {
               type="checkbox"
               className="form-check-input"
               id="terms-chkbox"
-              required
+              
             />
             <label className="" htmlFor="terms-chkbox">
               I agree with the terms and conditons

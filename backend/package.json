@@ -1,13 +1,13 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Health Care PLus Management System (MERN STACK Project)",
+  "description": "HealthPLus Management System (MERN STACK Project)",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Muhammad Usman Asghar and Muhammad Tahir",
+  "author": "PS",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
